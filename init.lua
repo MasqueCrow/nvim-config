@@ -2,6 +2,9 @@
 local o = vim.opt
 local g = vim.g
 
+vim.opt.listchars = { tab = "| " } -- show vertical line
+vim.opt.list = true -- enable above globally
+
 o.number = true                 -- show line numbers
 -- o.relativenumber = true      -- display relative line numbers (commented out as in original)
 o.hlsearch = true              -- highlight search
@@ -30,3 +33,4 @@ vim.api.nvim_create_autocmd("VimEnter", {
 
 -- include lazy nvim
 require("config.lazy")
+

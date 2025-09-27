@@ -6,6 +6,7 @@ return {
       "MunifTanjim/nui.nvim",
       "nvim-tree/nvim-web-devicons"
     },
+    branch = "disable-x-requested-with-header",
     build = nil,  -- optional if you use treesitter html parser
     cmd = "Leet",
     opts = {
